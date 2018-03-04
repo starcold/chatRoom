@@ -1,0 +1,109 @@
+a{
+	text-decoration:none;
+	color: #808080;  	
+}
+html,body{
+	height: 100%;
+	background: #F1FFFF;
+	overflow: hidden;
+}
+#body{
+	min-height: 100%;
+}
+.abc{    
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	position: relative;
+	width: 100%;
+}
+#container{
+	width: 100%;
+	position:absolute;
+	left: 0;
+	top:  0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	padding-bottom: 24px;					/*距离底部24px*/
+	text-align: center;
+}		
+#logo{
+	width: 600px;							/*宽度*/
+	height: 90px;							/*高度*/
+	border: 0px;							/*边线*/
+	margin: 0 auto;							/*会让此元素水平居中，注意：此元素垂直并不居中*/
+	margin-top: 8%;
+}	
+#main{
+	width: 400px;
+	height: 300px;
+	color: #000000;
+	font-size: 16px;
+	margin: auto;
+	margin-top: 120px;
+	background-color: rgba(0,0,0,0.25); /*设置背景颜色（0，0，0）不透明度0.25*/
+	padding-top: 1px;
+}
+form input {
+	-webkit-appearance: none;/*Safari 和 Chrome去除系统默认appearance的样式*/
+	-moz-appearance: none;/* Firefox */
+	appearance: none;/*所有主流浏览器都不支持的属性*/		
+	outline: 0;/*轮廓线*/
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 200px;
+	border-radius: 3px;/*圆角边框*/
+	padding: 10px 15px;
+	margin: 0 auto 10px auto;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	-webkit-transition-duration: 0.25s;/* Safari 和 Chrome */
+	transition-duration: 0.25s;
+	font-weight: 300;
+	-moz-transition-duration: 0.25s; /* Firefox 4 */
+	-o-transition-duration: 0.25s; /* Opera */
+}
+form input:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+form input:focus {
+	background-color: white;
+	width: 240px;
+	color: #0066FF;
+}
+form button{
+	background: url(../images/sign_in.png) no-repeat;
+	width: 102px;
+	height: 30px;
+	border: none;
+	transition: all 0.3s; /*变化时间为0.3s*/
+	cursor:pointer;	/*鼠标指针为手型*/
+}
+form button:hover {
+	transform: scale(1.2);
+}
+#login_padding{
+	margin:auto;
+	margin-top: 5px;
+	width: 390px;
+	height: 240px;
+	padding: 50px 0px 0px 0px;
+	background-image: url(../images/login_padding.png);
+	border: 1px solid black;
+}
+#footer{
+	position: absolute;
+	bottom: 0px;
+	margin-top: -24px;          				/*使footer上浮24px*/
+	margin-left: -16px;
+	height: 24px;
+	width: 100%;
+	font-size: 12px;
+	text-align: right;
+	color: #808080;
+	padding-bottom: 5px;
+}

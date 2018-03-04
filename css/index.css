@@ -1,0 +1,67 @@
+a{
+    text-decoration:none; 
+    color: #000000;
+  }
+  html,body{
+    height: 100%;
+    background: #F1FFFF;
+    overflow: hidden;
+  }
+  #body{
+    position: relative;
+    min-height: 100%;
+  }
+  #container{
+   position:absolute;
+   left: 0;
+   top:  0;
+   bottom: 0;
+   right: 0;
+   margin: auto;
+   padding-bottom: 24px;              /*距离底部24px*/
+ }    
+ #logo{
+   width: 600px;                    /*宽度*/
+   height: 90px;                    /*高度*/
+   border: 0px;                     /*边线*/
+   margin: 0 auto;                  /*会让此元素水平居中，注意：此元素垂直并不居中*/
+   margin-top: 8%;
+ }  
+ #footer{
+   position: absolute;
+   bottom: 0px;
+   margin-top: -24px;            /*使footer上浮24px*/
+   height: 24px;
+   width: 100%;
+   font-size: 12px;
+   text-align: right;
+   color: #808080;
+   padding-right: 12px;
+   padding-bottom: 12px;
+ }
+ #footer a{
+  color: #808080;  
+}
+#loginlink{
+ width: 240px;                  /*宽度*/
+ height: 240px;                 /*高度*/
+ border: 0px;                   /*边线*/
+ margin: 0 auto;                /*会让此元素水平居中，注意：此元素垂直并不居中*/
+ margin-top: 8%;
+ font-size: 26px;
+ text-align: center;
+ color: #000000;
+ opacity: 1;                   /*透明度不透明*/
+ transition: all 0.6s;         /*所有属性变化在0.6s内完成*/
+}
+#loginlink:hover{
+  opacity: 0.8;
+  transform: scale(1.2);
+  color: #ffffff;
+}
+#loginlink a:hover{
+  color: #ffffff;
+}
+#loginlink h2{
+ margin-top: -153px
+}
