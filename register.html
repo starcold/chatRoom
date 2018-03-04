@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<title>注册新用户</title>
+	<link rel="stylesheet" href="css/register.css" type="text/css"/>
+</head>
+<body>
+	<section class="split_header">
+		<header class="nav_title"><font class="label icon-signup vb"></font>注册新用户</header>
+		<div class="register">
+			<dl>
+				<dt class="min_fix"><span class="digit">还能输入<font id="txtEmailDigit">40</font>个字</span><label for="txtEmail"><font class="label icon-send"></font>邮箱</label></dt><!--for 绑定元素-->
+				<dd><input type="text" class="input_txt_h25" id="txtEmail"/></dd>
+				<dd class="assist"><span id="errorEmail" title="邮箱由字母、数字或下划线组成">邮箱由字母、数字或下划线组成</span></dd>
+				<dt class="min_fix"><span class="digit">还能输入<font id="txtPwdDigit">20</font>个字</span><label for="txtPwd"><font class="label icon-lock"></font>密码</label></dt>
+				<dd><input type="password" class="input_txt_h25" id="txtPwd" name="pwd"/></dd>
+				<dd class="pwd_complex"><span></span><span></span><span></span><font></font></dd>
+				<dd class="assist"><span id="errorPwd" title="密码为6-20个字符，可由英文、数字及符号组成，不能包含空格">密码为6-20个字符，可由英文、数字及符号组成，不能包含空格</span></dd>
+				<dt class="min_fix"><span class="digit">还能输入<font id="txtRePwdDigit">20</font>个字</span><label for="txtRePwd"><font class="label icon-key"></font>确认密码</label></dt>
+				<dd><input type="password" class="input_txt_h25" id="txtRePwd" name="pwd"/></dd>
+				<dd class="assist"><span id="errorRePwd" title="请再次输入密码">请再次输入密码</span></dd>
+				<dd class="agree"><input type="checkbox" id="cbProtocol" checked="true" class="agree_input_align"/>我已阅读并同意<a href="javascript:void(0)" id="btnProtocol" class="serviceterms">服务条款</a></dd>
+				<dd><a href="javascript:void(0)" id="btnRegister" class="register_button">马上注册</a>
+				<p id="perror" class="error lh30 f14">&nbsp;</p></dd>
+			</dl>
+		</div>
+	</section>
+	<script src="scripts/libs/require/require.js" type="text/javascript" data-main="scripts/app/user_register/main"></script>
+</body>
+</html>
