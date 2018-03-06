@@ -1,6 +1,8 @@
 a{
 	text-decoration:none;
-	color: #808080;  	
+	color: #808080;
+	padding-left: 8px;
+	padding-right: 8px;  	
 }
 html,body{
 	height: 100%;
@@ -46,6 +48,15 @@ html,body{
 	background-color: rgba(0,0,0,0.25); /*设置背景颜色（0，0，0）不透明度0.25*/
 	padding-top: 1px;
 }
+#login_padding{
+	margin:auto;
+	margin-top: 5px;
+	width: 390px;
+	height: 240px;
+	padding: 50px 0px 0px 0px;
+	background-image: url(../images/login_padding.png);
+	border: 1px solid black;
+}
 form input {
 	-webkit-appearance: none;/*Safari 和 Chrome去除系统默认appearance的样式*/
 	-moz-appearance: none;/* Firefox */
@@ -76,6 +87,7 @@ form input:focus {
 	color: #0066FF;
 }
 form button{
+	background-color: #699AFB;
 	background: url(../images/sign_in.png) no-repeat;
 	width: 102px;
 	height: 30px;
@@ -85,15 +97,6 @@ form button{
 }
 form button:hover {
 	transform: scale(1.2);
-}
-#login_padding{
-	margin:auto;
-	margin-top: 5px;
-	width: 390px;
-	height: 240px;
-	padding: 50px 0px 0px 0px;
-	background-image: url(../images/login_padding.png);
-	border: 1px solid black;
 }
 #footer{
 	position: absolute;

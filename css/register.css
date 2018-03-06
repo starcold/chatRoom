@@ -1,30 +1,16 @@
 /*reset*/
-/*em:弹性布局：*/
-html {
-	font-size: 100%;
+a{
+	text-decoration:none;
+	color: #808080; 
+	padding-left: 8px;
+	padding-right: 8px;  	
+} 	
 }
-body{
-	line-height:1.4;
-	color:#333;
-	font-family:arial;
-	font-size:1em;
-	margin: 0px;
+html,body{
+	height: 100%;
+	background: #F1FFFF;
+	overflow: hidden;
 }
-section,header{
-	display: block;
-}
-,dl,dt,dd,li{
-	margin:0;
-}
-input{
-	font-size:100%;
-	font-family:inherit;
-	outline:0;
-}
-a:visited,a:active{
-	outline:0;
-}
-
 .split_header{
 	padding-top:12px;
 	width: 1000px;
@@ -37,48 +23,13 @@ a:visited,a:active{
 	font-size:1.25em;
 }
 /*website icon*/
-
-@font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-fl11l');
-	src:url('fonts/icomoon.eot?#iefix-fl11l') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-fl11l') format('woff'),
-		url('fonts/icomoon.ttf?-fl11l') format('truetype'),
-		url('fonts/icomoon.svg?-fl11l#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-.lable{
-	font-family:'icomoon';
-	margin-right:5px;
-}
-.vb{
-	vertical-align:bottom;/*将支持valign特性的对象的文本与对象底端对齐*/
-}
-.icon-key:before {content: "\e604"}
-.icon-lock:before {content: "\e605"}
-.icon-signup:before {content: "\e606"}
-.icon-send:before {content: "\f1d9"}
-
-
 .register{
 	padding:20px 20px 30px 0;
 }
-.min_fix{
-	width: 310px;
-	overflow:hidden;_zoom:1；
+.input_lable{
+
 }
-.digit{
-	font-size:.75em;
-	color:#909090;
-	float:right;/*向右浮动*/
-	padding-top:5px;
-}
-.digit font{
-	color:#404040;
-	font-family:Georgia;
-}
-.input_txt_h25{
+.input{
 	width:300px;
 	font-size:.875em
 	border:1px solid #c2c2c2;
@@ -88,7 +39,7 @@ a:visited,a:active{
 	line-height:25px;
 	height:25px;
 }
-.input_txt_h25:focus{
+.input:focus{
 	border:1px solid #1A6BE6;
 	-webkit-box-shadow:0 0 5px #1A6BE6;
 	-moz-box-shadow:0 0 5px #1A6BE6;
@@ -101,33 +52,6 @@ a:visited,a:active{
 	-ms-transition:all 0.3s;
 	transition:all 0.3s;
 }
-.assist{
-	color:#909090;
-	font-size:.75em;
-	line-height:30px;
-	margin-bottom:20px;
-}
-
-.pwd_complex{
-	padding:5px 0;
-	height:15px
-	font-size:.75em;
-}
-.pwd_complex span{
-	height:6px;
-	width:80px;
-	margin-right:5px;
-	display:inline-block;
-	border:1px solid #c2c2c2;
-	overflow:hidden;
-}
-.agree{
-	font-size:.75em;
-	margin-bottom:10px;
-}
-.agree_input_align{
-	vertical-align:-3px;/*垂直对齐*/
-}
 a.serviceterms{
 	color:#404040;
 	text-decoration:none;
@@ -138,14 +62,26 @@ a.register_button{
 	line-height:40px;
 	font-size:1.25em;
 	text-decoration:none;
-	background:#07600d;
+	background:#699AFB;
 	display:inline-block;
 	text-align:center;
 	color:#fff;
 }
 a.register_button:hover{
-	background:#439449;
+	background:#90CAFF;
 }
 a.register_button:active{
-	background:#01b60e;
+	background:#396AFF;
+}
+#footer{
+	position: absolute;
+	bottom: 0px;
+	margin-top: -24px;          				/*使footer上浮24px*/
+	margin-left: -16px;
+	height: 24px;
+	width: 100%;
+	font-size: 12px;
+	text-align: right;
+	color: #808080;
+	padding-bottom: 5px;
 }
