@@ -6,30 +6,35 @@
 	<link rel="stylesheet" href="css/register.css" type="text/css"/>
 </head>
 <body>
-	<section class="split_header">
-		<header class="nav_title"><font class="label icon-signup vb" ></font>注册新用户</header>
+	<div class="body">
+		<header class="nav_title"><font></font>注册新用户</header>
 		<div class="register" >
-			<form name="regform" action="regcheck.php">
-				<label class="input_lable">账号：</label><br/>
-				<input class="input " type="text" name="username"><br/><br/>
+			<form name="regform" action="regcheck.php" method="post">
+				<p>账号：</p>
+				<input class="input " type="text" name="username">
 
-				<label class="input_lable">密码：</label><br/>
-				<input class="input " type="password" name="password"><br/><br/>
+				<p>昵称：</p>
+				<input class="input " type="text" name="username">
 
-				<label class="input_lable">确认密码：</label><br/>
-				<input class="input " type="password" name="repassword"><br/><br/>
+				<p>密码：</p>
+				<input class="input " type="password" name="password">
 
-				<label class="input_lable">邮箱：</label> <br/>
-				<input class="input " type="text" name="email"><br/><br/>
+				<p>确认密码：</p>
+				<input class="input " type="password" name="repassword">
 
-				<label class="input_lable">性别:</label> <br/>
-				<input class="input " type="text" name="sex"><br/><br/>
+				<p>邮箱：</p>
+				<input class="input " type="text" name="email">
 
-				<label class="input_lable">年龄：</label> <br/>
-				<input class="input " type="text" name="age"><br/><br/>
+				<p>性别:</p>
+				<input type="radio" id="Sex_Man" name="rb_Sex" value="0" checked="CHECKED" /><label for="Sex_Man"> 帅哥</label>
+                <input type="radio" id="Sex_Woman" name="rb_Sex" value="0" /><label for="Sex_Woman"> 美女</label>　
 
-				<label class="input_lable">地区：</label> <br/>
-				<select class="input">
+				<p>年龄：</p>
+				<input class="input " type="text" name="age">
+
+				<p>地区：</p>
+				<input class="input" list="areadata" name="area">
+				<datalist id="areadata">
 					<option value ="华东">华东地区</option>
 					<option value ="华南">华南地区</option>
 					<option value="华北">华北地区</option>
@@ -37,12 +42,15 @@
 					<option value ="东北">东地区北</option>
 					<option value ="西南">西南地区</option>
 					<option value="西北">西北地区</option>
-				</select>
+				</datalist>
+
+				<input class="register_button" type="submit" name="submit" value="马上注册">
 			</form>
 		</div>
-	</section>
-	<div id="footer">
-		 |<a href="register.html">注 册 新 用 户</a>|<a href="aboutme.html">关 于 我 们</a>|<a href="">意 见 反 馈</a>
+		<div class="footer">
+			|<a href="login.html">返 回 登 陆</a>|<a href="regsiter.html">注 册 新 用 户</a>|<a href="aboutme.html">关 于 我 们</a>|<a href="">意 见 反 馈</a>
+		</div>
 	</div>
+	
 </body>
 </html>
