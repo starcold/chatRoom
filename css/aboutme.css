@@ -9,6 +9,7 @@ html,body{
   height: 100%;
   background: #F1FFFF;
   overflow: hidden;
+  background-image: url(../images/regbg.png);
 }
 #body{
   min-height: 100%;

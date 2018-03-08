@@ -1,42 +1,39 @@
-a{
-	text-decoration:none;
-	color: #808080; 
-	padding-left: 8px;
-	padding-right: 8px;  	
-} 	
-}
-html body{
-	height: 100%;
-	background: #F1FFFF;
-	overflow: hidden;
-}
-.body{
+body{
 	min-height: 100%;
-	padding-top:12px;
-	margin: 0 auto;
-	padding-bottom: 24px;
-	min-width: 100%;
+	height: 100%;
+	background-image: url(../images/regbg.jpg);
 }
+
 form{
-	width: 300px;
+	width: 400px;
 	margin: auto;
+	margin-right: 600px;
+	padding: 25PX;
+	background-color: rgba(0,0,0,0.2);
 }
 
 form p{
+	font-weight: bold;
 	margin-bottom:5px;
-
+	margin-top: 25px;
+}
+form a{
+	color: black;
+	text-decoration:none; 
+	border-bottom:1px dashed #000000;
 }
 .nav_title{
 	margin: auto;
-	width: 1000px;
+	width: 900px;
+	padding-top:10px; 
 	padding-bottom:10px;
-	border-bottom:1px solid #C2C2C2;
+	border-bottom:1px solid #8A5146;
 	font-family:'微软雅黑';
 	font-size:1.25em;
 }
 
 .register{
-	width: 320px;
+	width: 1200px;
 	padding:20px 20px 30px 0;
 	margin: 0 auto;
 }
@@ -45,13 +42,23 @@ form p{
 	font-size:.875em
 	border:1px solid #c2c2c2;
 	padding:2px 5px;
-	vertical-align:
-	middle;
+	vertical-align:middle;
 	line-height:25px;
 	height:25px;
+	autocomplete:off;
+}
+.input:hover{
+	border:1px solid #1A6BE6;
+	background-color:#E2EAFF; 
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	-ms-transition:all 0.3s;
+	transition:all 0.3s;
 }
 .input:focus{
 	border:1px solid #1A6BE6;
+	background-color:#F2FAFF; 
 	-webkit-box-shadow:0 0 5px #1A6BE6;
 	-moz-box-shadow:0 0 5px #1A6BE6;
 	-o-box-shadow:0 0 5px #1A6BE6;
@@ -63,10 +70,15 @@ form p{
 	-ms-transition:all 0.3s;
 	transition:all 0.3s;
 }
+
+#cb{
+	margin-top: 40px;
+}
+
 .register_button{
 	width: 300px;
+	margin-top: 15px;
 	line-height:40px;
-	margin-top: 40px;
 	font-size:1.25em;
 	text-decoration:none;
 	background:#699AFB;
@@ -93,4 +105,36 @@ form p{
 	color: #808080;
 	padding-bottom: 15px;
 }
-
+.footer a{
+	text-decoration:none;
+	color: #808080; 
+	padding-left: 8px;
+	padding-right: 8px;  	
+} 
+.protocol{
+	position: absolute;
+	top: 10%;   
+	left: 30%;  
+	width: 800px;
+	display: none;  
+	height: 640px;
+	border: 0px;
+}
+.readed_button{
+	position:absolute;
+	left:45%;
+	width: 120px;
+	height: 40px;
+	line-height:40px;
+	font-size:1.25em;
+	background:#699AFB;
+	text-align:center;
+	color:#fff; 
+	border:0px;  
+}
+.readed_button:hover{
+	background:#90CAFF;
+}
+.readed_button:active{
+	background:#396AFF;
+}
