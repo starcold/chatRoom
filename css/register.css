@@ -5,26 +5,34 @@ body{
 }
 
 form{
-	width: 400px;
+	width: 320px;
 	margin: auto;
 	margin-right: 600px;
-	padding: 25PX;
+	padding: 15px 35px 35px 35px;
 	background-color: rgba(0,0,0,0.2);
 }
 
 form p{
 	font-weight: bold;
 	margin-bottom:5px;
-	margin-top: 25px;
+	margin-top: 15px;
+}
+form span{
+	font-size: 12px;
+	padding-left: 10px;
+	color: #606060;
 }
 form a{
 	color: black;
 	text-decoration:none; 
 	border-bottom:1px dashed #000000;
 }
+.borderRed{
+	border: 2px solid red;
+}
 .nav_title{
 	margin: auto;
-	width: 900px;
+	width: 800px;
 	padding-top:10px; 
 	padding-bottom:10px;
 	border-bottom:1px solid #8A5146;
@@ -45,7 +53,6 @@ form a{
 	vertical-align:middle;
 	line-height:25px;
 	height:25px;
-	autocomplete:off;
 }
 .input:hover{
 	border:1px solid #1A6BE6;
@@ -70,11 +77,6 @@ form a{
 	-ms-transition:all 0.3s;
 	transition:all 0.3s;
 }
-
-#cb{
-	margin-top: 40px;
-}
-
 .register_button{
 	width: 300px;
 	margin-top: 15px;
@@ -96,7 +98,7 @@ form a{
 .footer{
 	position: absolute;
 	bottom: 0px;
-	margin-top: -24px;          				/*使footer上浮24px*/
+	margin-top: -24px;/*使footer上浮24px*/
 	margin-left: -16px;
 	height: 24px;
 	width: 100%;
@@ -116,7 +118,7 @@ form a{
 	top: 10%;   
 	left: 30%;  
 	width: 800px;
-	display: none;  
+	display: none;  /*设置不显示*/
 	height: 640px;
 	border: 0px;
 }
@@ -137,4 +139,18 @@ form a{
 }
 .readed_button:active{
 	background:#396AFF;
+}
+
+#accept{
+	margin-top: 40px;
+}
+#area_error{
+	padding: 5px 0 0 0;
+	display: none;
+	color: red;
+}
+#email_error{
+	padding: 5px 0 0 0;
+	display: none;
+	color: red;
 }

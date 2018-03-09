@@ -9,31 +9,40 @@
 <body>
 	<header class="nav_title"><font></font>注册新用户</header>
 	<div class="register" >
-		<form name="regform" action="regcheck.php" method="post">
+		<form name="regform" action="regcheck.php" method="post" onsubmit="return checkform()">
 			<p>账号：</p>
-			<input class="input " type="text" name="username" id="username" />
+			<input class="input " type="text" name="username" id="username" maxlength="20" onblur="checkName()" />
+			<br/><span id="username_error">1-20个字符,由字母和数字组成</span>
+			<!--也可以用innerHTML 属性设置或返回表格行的开始和结束标签之间的 HTML实现span-->
 
-			<p>昵称：</p>
-			<input class="input " type="text" name="nickname" id="nickname" />
+			<p>昵称：</p> 
+			<input class="input " type="text" name="nickname" id="nickname" maxlength="20" onblur="checknick()" />
+			<br/><span id="nickname_error">1-20个字符</span>
 
 			<p>密码：</p>
-			<input class="input " type="password" name="password" id="password" />
+			<input class="input " type="password" name="password" id="password" maxlength="30" onblur="checkpwd()" />
+			<br/><span id="password_error">6-20个字符</span>
 
 			<p>确认密码：</p>
-			<input class="input " type="password" name="repassword" id="repassword" />
+			<input class="input " type="password" name="repassword" id="repassword" maxlength="30" onblur="checkrepwd()" />
+			<br/><span id="repassword_error">重复输入密码</span>
 
 			<p>邮箱：</p>
-			<input class="input " type="text" name="email" id="email" />
+			<input class="input " type="text" name="email" id="email" maxlength="50" onblur="checkemail()" />
+			<br/><span id="email_error">邮箱格式不正确</span>
 
 			<p>性别:</p>
-			<input type="radio" id="Sex_Man" name="rb_Sex" value="0" checked="CHECKED" /><label for="Sex_Man"> 帅哥</label>
+			<input type="radio" id="Sex_Man" name="rb_Sex" value="0" checked="checked" /><label for="Sex_Man"> 帅哥</label>
 			<input type="radio" id="Sex_Woman" name="rb_Sex" value="0" /><label for="Sex_Woman"> 美女</label>　
 
 			<p>年龄：</p>
-			<input class="input " type="text" name="age" id="age" />
+			<input class="input " type="text" name="age" id="age" onblur="checkage()" />
+			<br/><span id="age_error">1-100的数字组成</span>
 
 			<p>地区：</p>
-			<input class="input" list="areadata" name="area" id="area" />
+			<input class="input" list="areadata" name="area" id="area" onblur="checkarea()" />
+			<br/><span id="area_error">地区不能为空</span>
+
 			<datalist id="areadata">
 				<option value ="华东">华东地区</option>
 				<option value ="华南">华南地区</option>
@@ -44,7 +53,7 @@
 				<option value="西北">西北地区</option>
 			</datalist>
 
-			<br/><input name="confirm"  type="checkbox" onclick="agree();" id="cb"/>我已认真阅读并接受<a href="#" onclick="showprotocol()">服务协议</a>。
+			<br/><input name="confirm"  type="checkbox" onclick="agree();" id="accept"/>我已认真阅读并接受<a href="#" onclick="showprotocol()">服务协议</a>。
 
 			<input class="register_button" type="submit" name="submit" disabled="disabled" id="register" value="马上注册"/>
 		</form>
@@ -53,9 +62,7 @@
 		|<a href="login.html">返 回 登 陆</a>|<a href="regsiter.html">注 册 新 用 户</a>|<a href="aboutme.html">关 于 我 们</a>|<a href="">意 见 反 馈</a>
 	</div>
 	<div class="protocol" id="protocol">
-		<iframe src="protocol.html" width="800" height="600">
-			
-		</iframe>
+		<iframe src="protocol.html" width="800" height="600"></iframe>
 		<br/>
 		<input class="readed_button" type="submit" name="readed"  onclick="hideprotocol()" value="我已阅读" />
 	</div>
