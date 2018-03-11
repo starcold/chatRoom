@@ -150,7 +150,9 @@
 
 	/*表单最终验证*/
 	function checkform(){
-		var check = checkName() && checknick() && checkpwd() && checkut() && checkrepwd() && checkemail() && checkage()
-		&& checkarea(); 
+		var check = checkName() && checknick() && checkpwd() && checkut() && checkrepwd() && checkemail() && checkage() && checkarea(); 
+		if(!check){
+			alert("注册信息有误，请核对后重试！");
+		}
 		return check;
 	}
