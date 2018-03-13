@@ -83,7 +83,7 @@
 		var check;
 		var pwd = $("password").value;
 		var repwd =$("repassword").value;
-		if(repwd！=pwd){
+		if(repwd != pwd){
 			check = false;
 			$("repassword").style.border = "1px solid red";
 			$("repassword_error").style.color = "red";
