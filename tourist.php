@@ -19,6 +19,7 @@ if(isset($_POST["submit"]) && $_POST["submit"] == "发送"){
 ?>
 <html>
 <head>
+	<meta http-equiv="refresh" content="5">
 	<title>游客</title>
 	<style type="text/css">
 	a{

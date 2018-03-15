@@ -12,13 +12,13 @@ if(isset($_POST["submit"]) && $_POST["submit"] == "登陆")
         $link = mysqli_connect("127.0.0.1", "root", "123456", "crdb"); //连接数据库
         mysqli_query($link,"set names utf8"); 
         $pwd = md5($psw);
-        $sql = "select user_id,pwd,nick from usertb where user_id = '$name' and pwd  = '$pwd'"; 
+        $sql = "select user_id,pwd from usertb where user_id = '$name' and pwd  = '$pwd'"; 
         $result = mysqli_query($link,$sql); 
         $num = mysqli_num_rows($result); 
         if($num) 
         { 
                 $row = mysqli_fetch_array($result);  //将数据以索引方式储存在数组中 
-                echo $row[2]; 
+                header("Location:chat.jsp?id=+'$row[0]'");
                 mysqli_close($link); 
         } 
        else 
