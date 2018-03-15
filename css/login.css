@@ -8,6 +8,8 @@ html,body{
 	height: 100%;
 	background: #F1FFFF;
 	overflow: hidden;
+	margin: 0;
+	padding: 0;
 }
 #body{
 	min-height: 100%;
@@ -54,7 +56,6 @@ html,body{
 	width: 390px;
 	height: 240px;
 	padding: 50px 0px 0px 0px;
-	background-image: url(../images/login_padding.png);
 	border: 1px solid black;
 }
 form input {
